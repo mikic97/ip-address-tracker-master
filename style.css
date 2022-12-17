@@ -1,0 +1,95 @@
+:root {
+  --very-dark-gray: hsl(0, 0%, 17%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+body {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/pattern-bg.png);
+  background-size: cover;
+}
+h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+}
+.form {
+  display: flex;
+}
+.input {
+  border: none;
+  border-radius: 11px 0 0 11px;
+  padding: 1em 2em;
+  width: 270px;
+  cursor: pointer;
+}
+.input:focus {
+  outline: none;
+}
+button {
+  cursor: pointer;
+  width: 60px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0 11px 11px 0;
+}
+button:hover {
+  background: var(--very-dark-gray);
+}
+.data {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  background: white;
+  border-radius: 11px;
+  text-align: center;
+}
+.card-name {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--dark-gray);
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5em;
+}
+li,
+input[type="text"] {
+  list-style: none;
+  color: black;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+#map {
+  height: 90vh;
+  width: 100vw;
+}
+.attribution {
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .input {
+    width: 500px;
+  }
+  .data {
+    width: 900px;
+    flex-direction: row;
+    height: auto;
+  }
+  .card-name {
+    text-align: left;
+  }
+}
